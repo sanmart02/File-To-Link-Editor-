@@ -95,7 +95,7 @@
       },
       "SESSION_NAME": {
           "description": " Session Name for Bot [ Add adarsh-goel]",
-          "value": "File-To-Link",
+          "value": "adarsh-goel",
           "required": false
       }
   },
