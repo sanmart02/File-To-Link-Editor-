@@ -1,17 +1,16 @@
-
-
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Videos via Links - 𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</title>
-    <link rel="icon" href="https://i.slow.pics/vBpClAQI.webp">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Videos via Links - 𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</title>
+  <link rel="icon" href="https://i.slow.pics/vBpClAQI.webp">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <style>
         .button-85 {
           padding: 0.6em 2em;
           border: none;
@@ -76,67 +75,43 @@
           top: 0;
           border-radius: 10px;
         }
-    </style>
-  </head>
-  <body style = "background-color: black;">
-    <div class = "container-fluid">
-        <div class = "row">
-            <div style="background-color: #19232d;" class = "col-12 fixed-top">
-                <h1 class = "text-center p-3" style = "color: yellow;background-color: #19232d; font-weight: bold;">
-                    𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡
-                </h1>
-            </div>
-            <div class = "col-12 p-5" style = "background-color: black;"></div>
-            <div class = "col-12 mt-5 mb-5">
-                <video id="player" playsinline controls data-poster="https://cdn.jsdelivr.net/npm/@googledrive/index@2.2.3/images/poster.jpg">
-                  <source src="%s" type="video/mp4">
-                  <source src="%s" type="video/webm">
-                </video>
-                <script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
-                <script>const player = new Plyr('#player');</script>
-            </div>
-            <div class = "col-12 text-center">
-                <button class="button-85 mb-3 mt-3" role="button">
-                    <a href="%s" style = "text-decoration: none; color: yellow;font-weight: bold;font-size: 20px;">
-                        Download Video
-                    </a>
-                </button>
-            </div>
-            <div class = "col-12 text-center">
-                <button class="bg-primary pl-2 pr-2 pt-1 pb-1 m-2 shadow" style = "border-radius :50px; border-width: 0px; width: 220px; height: 60px;" width = "200px">
-                    <a href="intent:%s#Intent;package=com.mxtech.videoplayer.ad;end">
-                        <img src="https://i.slow.pics/qeem0Xni.png" alt="mx_logo" width="150px">
-                    </a>
-                </button>
-            </div>
-            <div class = "col-12 text-center">
-                <button class="pl-2 pr-2 pt-1 pb-1 m-2" style = "border-radius :50px; border-width: 0px; width: 220px; height: 60px; background-color: #7400FF;">
-                    <a href="intent:%s#Intent;package=org.videolan.vlc;end">
-                        <img src="https://i.slow.pics/lP6ygVnl.png" alt="vlc_logo" width="100px" height="40px"/>
-                    </a>
-                </button>
-            </div>
-            <div class = "col-12 text-center">
-                <button class="pl-2 pr-2 pt-1 pb-1 m-2" style = "border-radius :50px; border-width: 0px; background-color: lightblue; width: 220px; height: 60px;">
-                    <a href="intent:%s#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end">
-                        <img src="https://i.slow.pics/ZKTgV9HV.png" alt="s_player_logo" width="170px">
-                    </a>
-                </button>
-            </div>
-            <div class = "col-12 text-center">
-                <button class="bg-warning pl-2 pr-2 pt-1 pb-1 m-2" style = "border-radius :50px; border-width: 0px; width: 220px; height: 60px;">
-                    <a href="intent:%s#Intent;package=com.playit.videoplayer;end">
-                        <img src="https://i.slow.pics/c0C4vnAa.png" alt="playit_logo" width="170px">
-                    </a>
-                </button>
-            </div>
-            <div class = "col-12 p-5" style = "background-color: black;"></div>
-            <div style="background-color: #19232d;" class = "col-12 p-2 fixed-bottom">
-                <p class = "text-center" style = "color: white; font-size: 20px;">
-                Made with 💛 by <a href="https://jagan.is-a.dev/" style = "color: red;font-weight: bold;font-size: 20px;">𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</a>
-                </p>
-            </div>
-        </div>
+  </style>
+</head>
+<body style="background-color: black;">
+  <div class="container-fluid">
+    <div class="row">
+      <div style="background-color: #19232d;" class="col-12 fixed-top">
+        <h1 class="text-center p-3" style="color: yellow;background-color: #19232d; font-weight: bold;">𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</h1>
+      </div>
+      <div class="col-12 p-5" style="background-color: black;"></div>
+      <div class="col-12 mt-5 mb-5">
+        <video id="player" playsinline="" controls="" data-poster="https://cdn.jsdelivr.net/npm/@googledrive/index@2.2.3/images/poster.jpg"><source src="%s" type="video/mp4"> <source src="%s" type="video/webm"></video> 
+        <script src="https://cdn.plyr.io/3.7.3/plyr.js"></script> 
+        <script>
+
+        const player = new Plyr('#player');
+        </script>
+      </div>
+      <div class="col-12 text-center">
+        <button class="button-85 mb-3 mt-3" role="button"><a href="%s" style="text-decoration: none; color: yellow;font-weight: bold;font-size: 20px;">Download Video</a></button>
+      </div>
+      <div class="col-12 text-center">
+        <button class="bg-primary pl-2 pr-2 pt-1 pb-1 m-2 shadow" style="border-radius :50px; border-width: 0px; width: 220px; height: 60px;" width="200px"><a href="intent:%s#Intent;package=com.mxtech.videoplayer.ad;end"><img src="https://i.slow.pics/qeem0Xni.png" alt="mx_logo" width="150px"></a></button>
+      </div>
+      <div class="col-12 text-center">
+        <button class="pl-2 pr-2 pt-1 pb-1 m-2" style="border-radius :50px; border-width: 0px; width: 220px; height: 60px; background-color: #7400FF;"><a href="intent:%s#Intent;package=org.videolan.vlc;end"><img src="https://i.slow.pics/lP6ygVnl.png" alt="vlc_logo" width="100px" height="40px"></a></button>
+      </div>
+      <div class="col-12 text-center">
+        <button class="pl-2 pr-2 pt-1 pb-1 m-2" style="border-radius :50px; border-width: 0px; background-color: lightblue; width: 220px; height: 60px;"><a href="intent:%s#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end"><img src="https://i.slow.pics/ZKTgV9HV.png" alt="s_player_logo" width="170px"></a></button>
+      </div>
+      <div class="col-12 text-center">
+        <button class="bg-warning pl-2 pr-2 pt-1 pb-1 m-2" style="border-radius :50px; border-width: 0px; width: 220px; height: 60px;"><a href="intent:%s#Intent;package=com.playit.videoplayer;end"><img src="https://i.slow.pics/c0C4vnAa.png" alt="playit_logo" width="170px"></a></button>
+      </div>
+      <div class="col-12 p-5" style="background-color: black;"></div>
+      <div style="background-color: #19232d;" class="col-12 p-2 fixed-bottom">
+        <p class="text-center" style="color: white; font-size: 20px;">Made with 💛 by <a href="https://jagan.is-a.dev/" style="color: red;font-weight: bold;font-size: 20px;">𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</a></p>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
