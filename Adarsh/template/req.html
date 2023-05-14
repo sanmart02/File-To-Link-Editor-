@@ -1,62 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta property="og:image" content="https://mi-link.herokuapp.com/dl/0/AgAD0bAxG6_woVQ.jpg" itemprop="thumbnailUrl">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>%s</title>
-    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-    
-        									 
-<style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
-      }
-    </style>
-    <style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
-      }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Videos via Links - 𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</title>
+  <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&amp;id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css">
+  <style>
+        .button-85 {
+          padding: 0.6em 2em;
+          border: none;
+          outline: none;
+          color: rgb(255, 255, 255);
+          background: #111;
+          cursor: pointer;
+          position: relative;
+          z-index: 0;
+          border-radius: 10px;
+          user-select: none;
+        }
+
+        .button-85:before {
+          content: "";
+          background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+          );
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          background-size: 400%;
+          z-index: -1;
+          filter: blur(5px);
+          -webkit-filter: blur(5px);
+          width: calc(100% + 4px);
+          height: calc(100% + 4px);
+          animation: glowing-button-85 20s linear infinite;
+          transition: opacity 0.3s ease-in-out;
+          border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+          0% {
+            background-position: 0 0;
+          }
+          50% {
+            background-position: 400% 0;
+          }
+          100% {
+            background-position: 0 0;
+          }
+        }
+
+        .button-85:after {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #222;
+          left: 0;
+          top: 0;
+          border-radius: 10px;
+        }
+  </style>
 </head>
+<body style="background-color: black;">
+  <div class="container-fluid">
+    <div class="row">
+      <div style="background-color: #19232d;" class="col-12 fixed-top">
+        <h1 class="text-center p-3" style="color: yellow;background-color: #19232d; font-weight: bold;">𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</h1>
+      </div>
+      <div class="col-12 p-5" style="background-color: black;"></div>
+      <div class="col-12 mt-5 mb-5">
+        <style>
+        marquee{
+        font-size: 30px;
+        font-weight: 800;
+        color: Black;
+        font-family: serif;
+        }
+        </style>
+        <style>
+        marquee{
+        font-size: 30px;
+        font-weight: 800;
+        color: Black;
+        font-family: serif;
+        }
+        </style>
+        <header>
+          <div class="toogle"></div>
+          <div id="file-name">
+            <marquee bgcolor="#808080">%s</marquee>
+          </div>
+        </header>
+        <div class="container"></div>
+        <center>
+          <div class="text-center p-3">
+            <button class="button-85 mb-3 mt-3" role="button"><a href="%s" style="text-decoration: none; color: yellow;font-weight: bold;font-size: 20px;">Download Video</a></button>
+          </div>
+        </center>
+        <footer>
+          <h1 class="text-center p-3" style="color: white;background-color: #19232d; font-weight: bold;">Video not playing ? possibly because your browser or the player doesn't support codec please download and watch</h1>
+          <center>
+            <h2><a href="https://youtube.com/channel/UCQ0MQOmzKY6Xtm4n7Qy0fEA"><img src="http://jagan-bots.onrender.com/44714/avatar1459910748.jpg?hash=AgADkw" alt="Jagan Mohan" width="400" height="175"></a></h2>
+          </center>
+        </footer>
+        <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script> 
+        <script>
 
-<body>
-	
-    <header>
-        <marquee bgcolor="#808080"
-<div class="toogle"></div>
-        <div id="file-name">
-            %s
-        </div>
-</marquee>
-    </header>
 
-    <div class="container">
-        <tag src="%s" class="player"></tag>
-    </div>
-
-    <footer>
-	    <center><h4>Video not playing ? possibly because your browser or the player doesn't support codec please download and watch :D</h4></center><p>
-	    <center><h2><a href="https://youtube.com/channel/UCQ0MQOmzKY6Xtm4n7Qy0fEA">
-  <img src="https://tgstreamdlbot.cf/5595/?hash=AgADob" alt="JaganLogo" width="300" height="105"></center>
-</a></center>
-	    	    
-
-
-    </footer>
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-	<script>
         const controls = [
               'play-large',
               'rewind',
@@ -81,6 +145,13 @@
         const body = document.querySelector('body');
         const footer = document.querySelector('footer');
         const toogle = document.querySelector('.toogle');
-    </script>
+        </script>
+        <div class="col-12 p-5" style="background-color: black;"></div>
+        <div style="background-color: #19232d;" class="col-12 p-2 fixed-bottom">
+          <p class="text-center" style="color: white; font-size: 20px;">Made with 💛 by <a href="https://jagan.is-a.dev/" style="color: red;font-weight: bold;font-size: 20px;">𝗝𝗔𝗚𝗔𝗡 𝗠𝗢𝗛𝗔𝗡</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
